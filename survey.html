@@ -1,0 +1,53 @@
+<main class="form-page">
+    <div id="personal-info" class="form-container survey-section active">
+        <h2>Your personal information</h2>
+        <form>
+            <input type="number" placeholder="Age" required>
+            <input type="text" placeholder="male/female" required>
+            <input type="number" placeholder="height (cm)" required>
+            <input type="number" placeholder="weight (kg)" required>
+            <button type="button" class="form-button" onclick="nextSection('personal-info', 'health-info')">next</button>
+        </form>
+    </div>
+
+    <div id="health-info" class="form-container survey-section hidden">
+        <h2>Health Information</h2>
+        <form>
+            <input type="text" placeholder="Any allergies" required>
+            <textarea placeholder="previous medical history"></textarea>
+            <input type="text" placeholder="blood pressure/diabetes (yes/no)">
+            <input type="text" placeholder="do you exercise? (yes or no)">
+            <button type="button" class="form-button" onclick="nextSection('health-info', 'dietary-info')">next</button>
+        </form>
+    </div>
+
+    <div id="dietary-info" class="form-container survey-section hidden">
+        <h2>Dietary preferences</h2>
+        <form>
+            <input type="text" placeholder="Do you follow a specific diet? (e.g., vegetarian, vegan, keto)">
+            <input type="text" placeholder="Do you have any food allergies?">
+            <input type="text" placeholder="Do you snack between meals?">
+            <input type="text" placeholder="Do you frequently eat at restaurants?">
+            <input type="text" placeholder="Do you prefer spicy foods?">
+            <input type="text" placeholder="Do you prefer sweet foods?">
+            <input type="text" placeholder="Do you have a preference for certain types of meat?">
+            <button type="button" class="form-button" onclick="nextSection('dietary-info', 'goals')">next</button>
+        </form>
+    </div>
+
+    <div id="goals" class="form-container survey-section hidden">
+        <form>
+            <textarea placeholder="do you have any existing medical conditions? explain in detail"></textarea>
+            <textarea placeholder="what are your future goals please explain in detail"></textarea>
+            <button type="button" class="form-button" onclick="submitForm()">submit</button>
+        </form>
+    </div>
+
+
+<div id="results-page" class="form-container survey-section hidden">
+    <h2>Your Personalized Nutrition Plan</h2>
+    <div id="plan-display">
+        </div>
+</div>
+
+</main>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - My NutriAi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My NutriAi</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#" class="cta active">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <div class="form-container">
+            <h2>Create account</h2>
+            <form id="signup-form" onsubmit="handleSignup(event)">
+                <div class="form-row">
+                    <input type="text" placeholder="First name" id="first-name" required>
+                    <input type="text" placeholder="Last name" id="last-name" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="form-row">
+                    <input type="password" placeholder="Password" id="password" required>
+                </div>
+                <button type="submit" class="form-button">sign in</button>
+            </form>
+            <div class="social-login">
+                <button class="social-button google">login with google</button>
+                <button class="social-button facebook">login with facebook</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
